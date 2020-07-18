@@ -1,9 +1,9 @@
 def prime?(int)
-  if int <= 1 || int == 0 || int == 1
+  if int <= 1 
     return false
   elsif
-    (2..value - 1).each do |i|
-      if value % i == 0
+    (2..int - 1).each do |i|
+      if int % i == 0
         return false
       end
     end
